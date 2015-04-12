@@ -56,7 +56,6 @@ class BagTest < Minitest::Test
   end
 
   def test_get_a_particular_type_of_candy
-    skip
     bag = Bag.new
     bag << Candy.new("Jawbreaker")
     bag << Candy.new("Jawbreaker")
@@ -67,7 +66,6 @@ class BagTest < Minitest::Test
   end
 
   def test_grabbing_candy_removes_it_from_the_bag
-    skip
     bag = Bag.new
     bag << Candy.new("Reese's Pieces")
     bag << Candy.new("Junior Mints")
@@ -79,7 +77,6 @@ class BagTest < Minitest::Test
   end
 
   def test_take_a_number_of_candies_from_the_bag
-    skip
     bag = Bag.new
     bag << Candy.new("Swedish Fish")
     bag << Candy.new("Milky Way")
@@ -93,7 +90,6 @@ class BagTest < Minitest::Test
   end
 
   def test_take_one_candy
-    skip
     bag = Bag.new
     bag << Candy.new("Lifesavers")
 

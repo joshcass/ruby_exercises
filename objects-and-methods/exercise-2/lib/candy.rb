@@ -1,8 +1,9 @@
 class Candy
-  attr_accessor :candy
+  attr_reader :candy, :sugar_level
 
-  def initialize(candy)
+  def initialize(candy, sugar_level = 0)
     @candy = candy
+    @sugar_level = sugar_level
   end
 
   def type
