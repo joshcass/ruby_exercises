@@ -24,23 +24,20 @@ class StudentTest < Minitest::Test
   end
 
   def test_grade_can_degrade
-    skip
     student = Student.new
     student.slack_off
     assert_equal "D", student.grade
     student.slack_off
-    assert_equal "F", student.grade
+    assert_equal "E", student.grade
   end
 
   def test_grade_can_only_get_so_bad
-    skip
     student = Student.new
     3.times { student.slack_off }
     assert_equal "F", student.grade
   end
 
   def test_slacking_off_is_immediately_noticable
-    skip
     student = Student.new
     100.times { student.study }
     student.slack_off
@@ -48,10 +45,9 @@ class StudentTest < Minitest::Test
   end
 
   def test_studying_helps_right_away
-    skip
     student = Student.new
     100.times { student.slack_off }
     student.study
-    assert_equal "D", student.grade
+    assert_equal "E", student.grade
   end
 end
