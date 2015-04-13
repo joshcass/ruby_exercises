@@ -7,7 +7,7 @@ class LeatherChair
 
 
   def faded?
-    if faded == true
+    if faded
       puts "Exposed chairs are faded."
     else
       puts "New chairs are NOT faded."
